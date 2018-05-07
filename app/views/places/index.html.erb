@@ -1,1 +1,8 @@
-<h1>Welcome to my Awesome Web App</h1>
+<% @places.each do |place| %>
+  <div>
+    <h1><%= place.name %><br />
+    <span class="address" style="font-style: italic;font-size:20px;"><%= place.address %></span></h1>
+    <p><%= place.description %></p>
+  </div>
+  <hr>
+<% end %>
